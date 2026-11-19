@@ -1,0 +1,31 @@
+# 1. Create a dictionary (keys must be immutable, like strings, numbers, or tuples)
+inventory = {
+    "apples": 12,
+    "bananas": 5,
+    "oranges": 8,
+}
+
+# 2. Safe lookup with .get() (avoids KeyError if a key is missing)
+print("Apples:", inventory.get("apples", 0))
+print("Mangoes:", inventory.get("mangoes", 0))  # Returns default 0
+
+# 3. Add or update entries
+inventory["bananas"] += 10  # Update existing value
+inventory["grapes"] = 20  # Insert new key-value pair
+
+# 4. Remove a key safely with .pop()
+removed_stock = inventory.pop("oranges", None)
+print("Removed oranges:", removed_stock)
+
+# 5. Iterate over keys, values, and pairs
+for item, count in inventory.items():
+    print(f"- {item}: {count} in stock")
+
+# 6. Dictionary comprehension (filter & transform)
+low_stock = {item: count for item, count in inventory.items() if count < 15}
+print("Low stock items:", low_stock)
+
+# 7. Merge two dictionaries (Python 3.9+ '|' operator; later keys win on conflict)
+restock = {"mangoes": 15, "apples": 25}
+updated_inventory = inventory | restock
+print("Merged inventory:", updated_inventory)
