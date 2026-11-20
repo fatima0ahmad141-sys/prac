@@ -1,0 +1,30 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "test",
+      "author": "test",
+      "borrowed_by": null
+    },
+    {
+      "id": 2,
+      "title": "test2",
+      "author": "test2",
+      "borrowed_by": null
+    }
+  ],
+  "members": [
+    {
+      "name": "suhaib",
+      "premium": true
+    },
+    {
+      "name": "suhaib2",
+      "premium": true
+    },
+    {
+      "name": "suhaib3",
+      "premium": false
+    }
+  ]
+}
