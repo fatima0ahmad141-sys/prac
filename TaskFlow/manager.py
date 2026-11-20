@@ -1,4 +1,4 @@
-from models import Task
+from TaskFlow.models import Task
 
 
 class TaskNotFoundError(Exception):

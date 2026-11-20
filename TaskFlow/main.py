@@ -1,5 +1,5 @@
-from manager import TaskManager, TaskNotFoundError
-from storage import Storage
+from TaskFlow.manager import TaskManager, TaskNotFoundError
+from TaskFlow.storage import Storage
 
 MENU = "\n1 Add · 2 List · 3 Complete · 4 Delete · 5 Quit"
 
