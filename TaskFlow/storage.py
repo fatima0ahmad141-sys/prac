@@ -2,7 +2,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from TaskFlow.models import Task
+from models import Task
 
 
 class Storage:
